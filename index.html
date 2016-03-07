@@ -17,18 +17,61 @@
     <body>
 
         <header>
-            <div class="container">
-            <nav>
-                <ul class="nav nav-justified">
-                    <li><a href="#">Sobre E-trainer</a></li>
-                    <li><a href="#">Ferramentas</a></li>
-                    <li><a href="#">Screenshots</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Suporte</a></li>
-                </ul>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav nav-justified">
+                            <li><a href="#">Sobre E-trainer</a></li>
+                            <li><a href="#">Ferramentas</a></li>
+                            <li><a href="#">Screenshots</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Suporte</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-togle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
             </nav>
-            </div>
         </header>
+
+
+        <section id="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="img/slider1.png">
+                </div>
+                <div class="item">
+                    <img src="img/slider2.png">
+                </div>
+                <div class="item">
+                    <img src="img/slider3.png">
+                </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+            <ol class="carousel-indicators" >
+                <li data-target="#slider" data-slide-to="0" class="active" ></li>
+                <li data-target="#slider" data-slide-to="1" class="" ></li>
+                <li data-target="#slider" data-slide-to="2" class="" ></li>
+            </ol>
+
+        </section>
 
 
         <section id="about" class="about">
@@ -188,17 +231,34 @@
                     <div class="row">
 
                         <div class="col-sm-4">
-                            <img src="img/screenshot1.png">
+                            <a href="modal" data-toggle="modal" data-image-url="img/screenshot1">
+                                <img src="img/screenshot1.png">
+                            </a>
                         </div>
+
                         <div class="col-sm-4">
-                            <img src="img/screenshot1.png">
+                            <a href="modal" data-toggle="modal" data-image-url="img/screenshot2">
+                                <img src="img/screenshot2.png">
+                            </a>
                         </div>
+
                         <div class="col-sm-4">
-                            <img src="img/screenshot1.png">
+                            <a href="modal" data-toggle="modal" data-image-url="img/screenshot3">
+                                <img src="img/screenshot3.png">
+                            </a>
                         </div>
 
                     </div>
                 </div>
+
+
+                <div id="modal" class="modal fade" tabIndex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+                    <div class="modal-body">
+                        <img src="#">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+                    </div>
+                </div>
+
             </section>
 
 
@@ -216,12 +276,69 @@
                             <div class="phone">
                                 <img src="img/download.png">
                             </div>
+
+                            <div class="downloads-empty"></div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-5 col-sm-offset-7">
+                                        <h2 class="text-center text-uppercase">Escolha sua plataforma</h2>
+                                        <section class="plataforms text-center">
+                                            <div class="col-md-5 col-sm-6">
+                                                Download for <b>Apple iOS</b>
+                                            </div>
+                                            <div class="col-md-5 col-sm-6">
+                                                Download for <b>Android</b>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </section>
 
+
+            <section id="suporte" class="suporte">
+                <h2 class="text-center text-uppercase">Suporte</h2>
+                <p class="text-center">Por favor preencha o formulario</p>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+
+                            <form id="form" action="">
+
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Name" name="name">
+                                </div>
+
+                                <div class="form-group">
+                                    <input  class="form-control"type="text" placeholder="Email" name="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea  class="form-control"placeholder="Message" name="message"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="btn btn-default" type="submit" value="Enviar">
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                <p class="text-center text-uppercase">Direitos reservados E-Trainer 2016</p>
+            </footer>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
