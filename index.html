@@ -9,23 +9,24 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
 
         <header>
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-collapse collapse">
                         <ul class="nav nav-justified">
-                            <li><a href="#">Sobre E-trainer</a></li>
-                            <li><a href="#">Ferramentas</a></li>
-                            <li><a href="#">Screenshots</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Suporte</a></li>
+                            <li><a data-scroll href="#about">Sobre E-trainer</a></li>
+                            <li><a data-scroll href="#tools">Ferramentas</a></li>
+                            <li><a data-scroll href="#screenshots">Screenshots</a></li>
+                            <li><a data-scroll href="#download">Login</a></li>
+                            <li><a data-scroll href="#support">Suporte</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,17 +79,32 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                    </div>
                     <h3 class="text-uppercase text-center">Facilidade</h3>
                     <p class="text-center">Com o E-trainer seus objetivos ficam mais perto de voce.</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
+                    </div>
                     <h3 class="text-uppercase text-center">Suporte Online</h3>
                     <p class="text-center">Com o E-trainer seus objetivos ficam mais perto de voce.</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-apple"></i>
+                            <i class="fa fa-android"></i>
+                        </div>
+                    </div>
                     <h3 class="text-uppercase text-center">IOS & Android</h3>
                     <p class="text-center">Com o E-trainer seus objetivos ficam mais perto de voce.</p>
                 </div>
@@ -109,7 +125,10 @@
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +138,10 @@
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +151,10 @@
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +164,10 @@
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +177,10 @@
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -168,8 +199,11 @@
                                     <h4 class="">Facebook</h4>
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                <div class="col-sm-4 col-sm-pull-8">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -178,19 +212,11 @@
                                     <h4 class="">Facebook</h4>
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="blue-cirle">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item-tools">
-                                <div class="content col-sm-8 col-sm-push-4 text-right">
-                                    <h4 class="">Facebook</h4>
-                                    <p> Asdf asdf lorem ipsum dolores galores</p>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                <div class="col-sm-4 col-sm-pull-8">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -200,8 +226,11 @@
                                     <h4 class="">Facebook</h4>
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                <div class="col-sm-4 col-sm-pull-8">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -211,8 +240,25 @@
                                     <h4 class="">Facebook</h4>
                                     <p> Asdf asdf lorem ipsum dolores galores</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="blue-cirle">
+                                <div class="col-sm-4 col-sm-pull-8">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-tools">
+                                <div class="content col-sm-8 col-sm-push-4 text-right">
+                                    <h4 class="">Facebook</h4>
+                                    <p> Asdf asdf lorem ipsum dolores galores</p>
+                                </div>
+                                <div class="col-sm-4 col-sm-pull-8">
+                                    <div class="blue-circle">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -283,11 +329,13 @@
                                 <div class="row">
                                     <div class="col-sm-5 col-sm-offset-7">
                                         <h2 class="text-center text-uppercase">Escolha sua plataforma</h2>
-                                        <section class="plataforms text-center">
+                                        <section class="platforms text-center">
                                             <div class="col-md-5 col-sm-6">
+                                                <i class="fa fa-apple"></i>
                                                 Download for <b>Apple iOS</b>
                                             </div>
                                             <div class="col-md-5 col-sm-6">
+                                                <i class="fa fa-android"></i>
                                                 Download for <b>Android</b>
                                             </div>
                                         </section>
@@ -345,6 +393,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery.waypoints.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

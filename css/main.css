@@ -61,6 +61,7 @@ body > section {
 }
 
 h2,h3 {
+    font-family: 'Roboto Condensed', sans-serif;
     color: #15365b;
     margin-bottom: 30px;
 }
@@ -87,9 +88,19 @@ h3:after {
     border: none;
     min-height: 90px;
     padding-top: 20px;
+    transition: 1s all ease;
+}
+
+.effect {
+    background-color:#123156;
+    min-height:30px;
+    box-shadow: 0 0 10px black;
+    padding-top: 0;
 }
 
 .nav > li > a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
     text-transform:uppercase;
     color:#fff;
     font-size: 1.3em;
@@ -100,6 +111,11 @@ h3:after {
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color:transparent;
+}
+
+.nav > li.active {
+     background-color: #08192d;
+     transition: 1s all ease;
 }
 
 section#slider {
@@ -121,10 +137,29 @@ section#slider img {
 .blue-circle {
     width: 100%;
     padding-bottom: 100%;
+    background-color: #15365b;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     margin: 0 auto;
+}
+
+.blue-circle div {
+    float: left;
+    width:100%;
+    padding-top: 45%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.blue-circle div i {
+     font-size: 3em;
+}
+
+#tools .blue-circle div i {
+     font-size: 2em;
 }
 
 #about .blue-circle {
@@ -214,6 +249,13 @@ section#download .platforms > div {
     position: relative;
     padding-left: 50px;
     color: #0c243d;
+}
+
+section#download .platforms i {
+     font-size: 2.5em;
+     position:absolute;
+     left: 20px;
+     top: 12px;
 }
 
 section#suporte {
