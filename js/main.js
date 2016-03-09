@@ -23,6 +23,44 @@ $(document).ready(function() {
         }
     });
 
+    $('#about .blue-circle').waypoint(function() {
+        $('#about .blue-circle').addClass('animated fadeInUp');
+    },{
+        offset: '50%'
+    });
+
+    $('.tools-image img').waypoint(function() {
+        $('.tools-image img').addClass('animated rubberBand');
+    },{
+        offset: '50%'
+    });
+
+    $('#tools .blue-circle').waypoint(function() {
+        $(this.element).addClass('animated fadeInUp');
+    },{
+        offset: '50%'
+    });
+
+    $('#screenshots  .col-xs-4').waypoint(function() {
+        $(this.element).addClass('animated zoomIn');
+        $(this.element).css({'opacity':1})
+
+    },{
+        offset: '50%'
+    });
+
+    $('#dowload div.phone img').waypoint(function() {
+        $(this.element).addClass('animated fadeInRight');
+    },{
+        offset: '50%'
+    });
+
+    $('#download .platforms > div').waypoint(function() {
+        $(this.element).addClass('animated fadeInUp');
+    },{
+        offset: '50%'
+    });
+
 });
 
 smoothScroll.init({

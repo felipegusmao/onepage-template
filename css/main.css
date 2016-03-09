@@ -64,6 +64,7 @@ h2,h3 {
     font-family: 'Roboto Condensed', sans-serif;
     color: #15365b;
     margin-bottom: 30px;
+    margin-top:30px;
 }
 
 h4 {
@@ -82,7 +83,7 @@ h3:after {
     margin-top: 8px;
 }
 
-.navbar-defaults {
+.navbar-default {
     box-shadow: none;
     background-color: transparent;
     border: none;
@@ -180,8 +181,8 @@ section#tools {
 }
 
 section#parallax {
-     height: 50px;
-     background-image: url(../img/parallax1.jpg);
+     height: 500px;
+     background-image: url(../img/parallax.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
@@ -203,9 +204,13 @@ section#download {
     padding-bottom: 0;
 }
 
-section#download .content-downloads {
+section#download .content-download {
     height: 700px;
     position: relative;
+}
+
+section#download .content-download div img {
+    opacity:1;
 }
 
 section#download div.phone {
@@ -228,7 +233,7 @@ section#download .downloads-empty {
     float:right;
     height: 100%;
     z-index:2;
-    background-image: url('../img/downloadAppBG.png');
+    background-image: url('../img/download2.png');
     background-repeat:no-repeat;
     background-position:bottom right;
 }
@@ -321,9 +326,22 @@ footer p {
      margin-bottom: 0;
 }
 
+/*** Animations  ***/
+.animation1,.animation2,.animation3 {
+    opacity: 0;
+}
 
+.animation1 {
 
-
+}
+.animation2 {
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+.animation3 {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
 
 
 
@@ -335,7 +353,6 @@ footer p {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
 }
 
 @media print,
@@ -344,6 +361,78 @@ footer p {
        (min-resolution: 120dpi) {
 
 }
+
+@media(max-width: 767px) {
+
+    .navbar-default .navbar-collapse {
+        border:none;
+    }
+
+    .navbar-collapse.in,
+    .collapsing {
+        background-color: #112741;
+    }
+
+    .navbar-default .navbar-toggle:hover {
+        background: transparent;
+    }
+
+    .navbar-default .navbar-toggle:focus {
+        background-color: #112741;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color:#fff;
+    }
+
+    #about .blue-circle,
+    .blue-circle {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    .tools-image {
+        text-align: center;
+    }
+
+    section#features h4,
+    section#features p {
+         text-align: center;
+    }
+
+    section#download .content-downloads {
+        height: 600px;
+    }
+
+    section#download div.phone,
+    section#download .downloads-empty {
+         width: 100%;
+    }
+
+    section#download .downloads-empty {
+        position: relative;
+    }
+
+    section#download .download {
+         top: 600px;
+         z-index: 10;
+    }
+
+    section#download .platforms > div {
+        margin-bottom: 10px;
+    }
+
+    section#download .platforms i {
+        top:2px;
+    }
+
+}
+
+@media(min-width: 768px) {}
+
+@media(min-width: 992px) {}
+
+@media(min-width: 1200px) {}
 
 /* ==========================================================================
    Helper classes
